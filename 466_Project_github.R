@@ -1,5 +1,5 @@
 library(R2jags)
-pc <- read.csv(REDACTED)
+pc <- read.csv(paper_clip_data.csv)
 head(pc)
 
 y <- pc$Num_bends
@@ -120,6 +120,7 @@ hist(beta0)
 hist(beta1)
 hist(beta2)
 hist(beta3)
+
 
 
 
