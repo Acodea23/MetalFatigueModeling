@@ -1,4 +1,4 @@
-# MetalFatigueModeling
+# Metal Fatigue Modeling
 Created models to predict the impact of various factors on metal's critical failure point
 
 - Predicted metal breakage with 95% accuracy using Linear Model 
