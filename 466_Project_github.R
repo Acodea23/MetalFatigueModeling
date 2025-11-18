@@ -7,8 +7,6 @@ temp <- pc$Temp
 gauge <- pc$Gauge
 tester <- as.numeric(pc$Block=="M")
 
-## should I center and scale the covariates???
-
 PoisModel <- "model {
   for(i in 1:length(y)){
     y[i] ~ dpois(lambda[i])
@@ -81,8 +79,6 @@ GoF_Summary <- apply(GoF,1,GoF_Test)
 hist(GoF_Summary,xlim=c(0,1))
 mean(GoF_Summary < 0.05)
 
-## how do I make posterior inference about the coefficients if they're on the log scale?
-
 ### Posterior Inference
 
 hist(PPDM-PPDK,main = "Matthew vs Katelyn PPD")
@@ -120,6 +116,7 @@ hist(beta0)
 hist(beta1)
 hist(beta2)
 hist(beta3)
+
 
 
 
